@@ -1,0 +1,76 @@
+/* Quitar márgenes por defecto */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Para que baje suave al dar clic en los links */
+  }
+  
+  /* Barra de menú */
+  .menu {
+    position: fixed;     /* Siempre arriba */
+    top: 0;              /* pegado arriba */
+    width: 100%;         /* ocupa todo el ancho */
+    background: black;   /* color de fondo */
+    padding: 10px;
+    text-align: right;   /* enlaces alineados a la derecha */
+  }
+  
+  .menu a {
+    color: white;        /* color de las letras */
+    margin: 0 15px;      /* espacio entre enlaces */
+    text-decoration: none; /* quitar subrayado */
+  }
+  
+  .menu a:hover {
+    color: yellow;       /* cambia de color al pasar el mouse */
+  }
+  
+  /* Pantalla principal */
+  .hero {
+    height: 100vh;   /* altura de toda la pantalla */
+    background: url("https://starkcloud.com/wp-content/uploads/2025/01/Que-es-Ciberseguridad.webp");
+    background-size: cover;    /* que cubra toda la pantalla */
+    background-position: center; /* centrada */
+    color: rgb(102, 41, 41);
+    text-align: center;
+  
+    /* Centrar el texto en medio de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .boton:hover {
+    background: white;
+    color: black;
+  }
+  
+  /* Secciones de integrantes */
+  .seccion {
+    height: 100vh;        /* que ocupe toda la pantalla */
+    padding-top: 80px;    /* espacio para que no quede escondido bajo el menú */
+    text-align: center;
+  }
+  
+  #juan { background: lightblue; }
+  #daniel { background: lightgreen; }
+  #sebastian { background: lightcoral; }
