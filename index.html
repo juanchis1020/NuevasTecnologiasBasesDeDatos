@@ -2,33 +2,84 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Proyecto en Equipo</title>
+  <title>Ciberseguridad</title>
   <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
 </head>
 <body>
 
   <!-- Menú arriba -->
   <div class="menu">
     <a href="#inicio">Inicio</a>
-    <a href="#juan">Juan</a>
+    <a href="#ciberseguridadMoviles">Ciberseguridad en moviles</a>
     <a href="#daniel">Daniel</a>
     <a href="#sebastian">Sebastián</a>
   </div>
 
   <!-- Pantalla principal -->
+   <main>
   <section id="inicio" class="hero">
     <h1>Ciberseguridad</h1>
     <p>Cuidamos tu huella digital</p>
   </section>
+  </main>
 
   <!-- Sección de Juan -->
-  <section id="juan" class="seccion">
+  <section id="ciberseguridadMoviles" class="seccion">
     <h2>Ciberseguridad en dispositivos moviles</h2>
     <p>Los dispositivos móviles se han convertido en herramientas esenciales para la vida diaria.
 En ellos utilizamos aplicaciones de mensajería, redes sociales, banca en línea y compras de todo tipo.
- Por ende, se han convertido en objetivos atractivos para los atacantes a través de Internet.
+Por ende, se han convertido en objetivos atractivos para los atacantes a través de Internet.
+A continuación, veremos la importancia de la ciberseguridad en dispositivos móviles,
+ así como algunas aplicaciones para detectar vulnerabilidades y las amenazas más comunes:
     </p>
-  </section>
+    <br>
+    <h3>Detecting malicious applications on smartphones with android operating system through of an app(Mejía, 2019)</h3>
+    <p>El crecimiento del uso de smartphones ha transformado la manera en que compartimos y almacenamos información, pero también ha abierto
+         la puerta a nuevas amenazas cibernéticas. En particular, Android, al ser el sistema operativo más utilizado en el mundo, se ha convertido
+          en el principal blanco de ataques, registrando cada mes cientos de nuevas muestras de malware.
+
+El artículo “Detectando aplicaciones maliciosas en Smartphone con sistema Android a través del uso de una aplicación” propone una solución a
+este problema mediante el desarrollo de una herramienta llamada BehaviorDetector.
+
+<h4> Principales aportes del estudio:</h4>
+
+<ul>
+  <li>Analiza aplicaciones instaladas en Android para identificar si son maliciosas, sospechosas o seguras,
+     usando un sistema de semaforización (verde, amarillo y rojo).</li>
+  <li>Utiliza la técnica de <em>hooking</em>, que permite interceptar el comportamiento de las apps y 
+    detectar solicitudes de permisos riesgosos en tiempo real.</li>
+  <li>Fue validada a través de un estudio de caso en el que se probaron aplicaciones nativas y personalizadas,
+     confirmando su efectividad para alertar al usuario de riesgos potenciales.</li>
+</ul>
+
+
+<h4> Amenazas más comunes en Android:</h4>
+
+<ul>
+    <li></li>Troyanos que suscriben al usuario en servicios de pago sin autorización.</li>
+
+    <li>Botnets que convierten el dispositivo en parte de redes de ataque.</li>
+
+    <li>Adware que inunda con publicidad no deseada.</li>
+
+    <li>Ransomware que secuestra la información y exige rescate.</li>
+</ul>
+
+📌 Conclusión
+
+El trabajo demuestra que es posible fortalecer la ciberseguridad en Android mediante herramientas automáticas que detecten y alerten sobre
+ aplicaciones maliciosas. BehaviorDetector es un ejemplo de cómo la tecnología puede ayudar a los usuarios a proteger su información y su
+  privacidad frente a un panorama de amenazas en constante crecimiento.</p>
+    <p><strong>Cadena de búsqueda en Scopus:</strong> "mobile security AND cybersecurity"</p>
+    <a><img src="imagenes/img1.jpg" alt="Captura de la busqueda del archivo" width="500"></a>
+    <br>
+
+    <button onclick="verArticulo('articulos/Articulo1.pdf')">ver Artículo 1</button>
+  
+    
+  
+</section>
 
   <!-- Sección de Daniel -->
   <section id="daniel" class="seccion">

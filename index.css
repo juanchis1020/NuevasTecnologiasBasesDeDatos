@@ -31,7 +31,7 @@ body {
     background: url("https://starkcloud.com/wp-content/uploads/2025/01/Que-es-Ciberseguridad.webp");
     background-size: cover;    /* que cubra toda la pantalla */
     background-position: center; /* centrada */
-    color: rgb(102, 41, 41);
+    color: rgb(238, 2, 2);
     text-align: center;
   
     /* Centrar el texto en medio de la pantalla */
@@ -64,13 +64,33 @@ body {
     color: black;
   }
   
-  /* Secciones de integrantes */
-  .seccion {
-    height: 100vh;        /* que ocupe toda la pantalla */
-    padding-top: 80px;    /* espacio para que no quede escondido bajo el menú */
-    text-align: center;
-  }
+/* Secciones de integrantes */
+.seccion {
+  height: 100vh;         /* cada sección ocupa la pantalla completa */
+  padding-top: 100px;    /* espacio por el menú fijo */
+  text-align: center;    /* SOLO centra los textos directos de la sección */
+}
+
+/* Alinear subtítulos y listas a la izquierda */
+.seccion h3, 
+.seccion h4,
+.seccion ul,
+.seccion ol {
+  text-align: left;
+
+}
+.seccion {
+  height: 100vh;          /* cada sección ocupa toda la pantalla */
+  overflow-y: auto;       /* si el contenido es más grande, scroll interno */
+  padding: 100px 20px;    /* espacio por el menú */
+  box-sizing: border-box; /* evita que el padding sume más tamaño */
+}
+
+
+
   
-  #juan { background: lightblue; }
+  #ciberseguridadMoviles { background: lightblue; }
   #daniel { background: lightgreen; }
   #sebastian { background: lightcoral; }
+
+
