@@ -64,12 +64,6 @@ body {
     color: black;
   }
   
-/* Secciones de integrantes */
-.seccion {
-  height: 100vh;         /* cada sección ocupa la pantalla completa */
-  padding-top: 100px;    /* espacio por el menú fijo */
-  text-align: center;    /* SOLO centra los textos directos de la sección */
-}
 
 /* Alinear subtítulos y listas a la izquierda */
 .seccion h3, 
@@ -79,18 +73,25 @@ body {
   text-align: left;
 
 }
+/* Secciones de integrantes */
 .seccion {
   height: 100vh;          /* cada sección ocupa toda la pantalla */
   overflow-y: auto;       /* si el contenido es más grande, scroll interno */
   padding: 100px 20px;    /* espacio por el menú */
   box-sizing: border-box; /* evita que el padding sume más tamaño */
 }
+.figuras {
+  display: flex;
+  gap: 20px;         /* espacio entre imágenes */
+  justify-content: center; /* centradas */
+}
 
-
+.figuras figure {
+  flex: 1;           /* cada figura ocupa espacio proporcional */
+  text-align: center;
+}
 
   
   #ciberseguridadMoviles { background: lightblue; }
   #daniel { background: lightgreen; }
   #sebastian { background: lightcoral; }
-
-
