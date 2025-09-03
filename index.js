@@ -2,3 +2,6 @@
 function verArticulo(rutaPdf) {
   window.open(rutaPdf, "_blank");
 }
+function verArticulo2(rutaPdf) {
+  window.open(rutaPdf, "_blank");
+}
