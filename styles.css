@@ -1,0 +1,112 @@
+/* Quitar márgenes por defecto */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Para que baje suave al dar clic en los links */
+  }
+  
+  /* Barra de menú */
+  .menu {
+    position: fixed;     /* Siempre arriba */
+    top: 0;              /* pegado arriba */
+    width: 100%;         /* ocupa todo el ancho */
+    background: black;   /* color de fondo */
+    padding: 10px;
+    text-align: right;   /* enlaces alineados a la derecha */
+  }
+  
+  .menu a {
+    color: white;        /* color de las letras */
+    margin: 0 15px;      /* espacio entre enlaces */
+    text-decoration: none; /* quitar subrayado */
+  }
+  
+  .menu a:hover {
+    color: yellow;       /* cambia de color al pasar el mouse */
+  }
+  
+  /* Pantalla principal */
+  .hero {
+    height: 100vh;   /* altura de toda la pantalla */
+    background: url("https://starkcloud.com/wp-content/uploads/2025/01/Que-es-Ciberseguridad.webp");
+    background-size: cover;    /* que cubra toda la pantalla */
+    background-position: center; /* centrada */
+    color: rgb(238, 2, 2);
+    text-align: center;
+  
+    /* Centrar el texto en medio de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .boton {
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .boton:hover {
+    background: white;
+    color: black;
+  }
+  
+
+/* Alinear subtítulos y listas a la izquierda */
+.seccion h3, 
+.seccion h4,
+.seccion ul,
+.seccion ol {
+  text-align: left;
+
+}
+/* Secciones de integrantes */
+.seccion {
+  height: 100vh;          /* cada sección ocupa toda la pantalla */
+  overflow-y: auto;       /* si el contenido es más grande, scroll interno */
+  padding: 100px 20px;    /* espacio por el menú */
+  box-sizing: border-box; /* evita que el padding sume más tamaño */
+}
+.figuras {
+  display: flex;
+  gap: 20px;         /* espacio entre imágenes */
+  justify-content: center; /* centradas */
+}
+
+.figuras figure {
+  flex: 1;           /* cada figura ocupa espacio proporcional */
+  text-align: center;
+}
+
+.daniel { 
+  font-family: 'Time New Roman' ; 
+} 
+
+.Alineación1 { 
+  text-align: left; 
+} 
+
+h3::before { 
+  content: "★ "; color: blue; 
+} 
+
+.keyword:hover { 
+  transform: scale(1.2); color: darkblue; 
+}
+  
+  #ciberseguridadMoviles { background: lightblue; }
+  #daniel { background: lightgreen; height: 930px; }
+  #sebastian { background: lightcoral; }
