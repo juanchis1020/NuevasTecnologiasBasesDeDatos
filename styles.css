@@ -141,6 +141,33 @@ h3::before {
 }
 
 
+#daniel {
+  background: lightgreen;
+  height: auto;
+  padding: 20px;
+  border-radius: 15px;
+  transition: background 0.5s ease; 
+}
+
+#daniel button {
+  background-color: #005f73;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#daniel button:hover {
+  background-color: #0a9396;
+  transform: scale(1.1);
+}
+
+.keyword {
+  font-weight: bold;
+  cursor: pointer;
+}
   
 
   #daniel { background: lightgreen; height: 930px; }

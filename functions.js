@@ -74,4 +74,24 @@ console.log("Nuevo comentario: " + comentario);
   // Limpia el campo después de enviar
     document.getElementById("comentario").value = "";
     }
+} 
+
+// Mostrar alerta personalizada
+function mostrarAlerta() {
+  alert("¡Bienvenido a la sección de Daniel sobre ciberseguridad y huella digital!");
+}
+
+// Cambiar el color de fondo dinámicamente
+function cambiarColorFondo() {
+  const seccionDaniel = document.getElementById("daniel");
+  const colores = ["lightgreen", "lightblue", "lightyellow", "lightpink"];
+  const colorActual = seccionDaniel.style.backgroundColor;
+  
+  // Elegir un color diferente al actual
+  let nuevoColor;
+  do {
+    nuevoColor = colores[Math.floor(Math.random() * colores.length)];
+  } while (nuevoColor === colorActual);
+  
+  seccionDaniel.style.backgroundColor = nuevoColor;
 }
