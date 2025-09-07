@@ -4,6 +4,9 @@ function verArticulo(rutaPdf) {
 }
 function verArticulo2(rutaPdf) {
   window.open(rutaPdf, "_blank");
+}
+function verArticulo3(rutaPdf) {
+  window.open(rutaPdf, "_blank");
 } 
 
 function resaltarPalabrasClave() { 
@@ -18,3 +21,26 @@ function resaltarPalabrasClave() {
 
       } 
     }
+
+// Función para volver arriba
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Detectar scroll para mostrar/ocultar el botón
+window.onscroll = function() {
+  const btn = document.getElementById("btnTop");
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+
+// Asignar evento al botón
+document.getElementById("btnTop").addEventListener("click", scrollToTop);
+
+function mostrarHora() {
+  const ahora = new Date();
+  document.getElementById("hora").textContent = "Hora actual: " + ahora.toLocaleTimeString();
+}

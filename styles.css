@@ -1,11 +1,11 @@
-/* Quitar márgenes por defecto */
+/* Quitar márgenes por defecto Css Juan*/
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    scroll-behavior: smooth; /* Para que baje suave al dar clic en los links */
+    scroll-behavior: smooth; /* Bja de manera mas controlada*/
   }
   
-  /* Barra de menú */
+  /* Barra de menú Css Juan*/
   .menu {
     position: fixed;     /* Siempre arriba */
     top: 0;              /* pegado arriba */
@@ -65,7 +65,7 @@ body {
   }
   
 
-/* Alinear subtítulos y listas a la izquierda */
+/* Alinear subtítulos y listas a la izquierda Css Juan*/
 .seccion h3, 
 .seccion h4,
 .seccion ul,
@@ -78,7 +78,7 @@ body {
   height: 100vh;          /* cada sección ocupa toda la pantalla */
   overflow-y: auto;       /* si el contenido es más grande, scroll interno */
   padding: 100px 20px;    /* espacio por el menú */
-  box-sizing: border-box; /* evita que el padding sume más tamaño */
+  box-sizing: border-box; /* evita que sume más tamaño */
 }
 .figuras {
   display: flex;
@@ -106,7 +106,42 @@ h3::before {
 .keyword:hover { 
   transform: scale(1.2); color: darkblue; 
 }
+#ciberseguridadMoviles {
+  height: 100vh; /* ocupa toda la pantalla */
+  overflow-y: auto;
+  padding: 100px 20px;
+  box-sizing: border-box;
+
+  /* Fondo con imagen */
+  background-image: url("imagenes/Fondo_Juan.jpg"); /*Css Juan*/
+  background-size: cover;       /* que cubra todo */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* que no se repita */
+  color: white;                 /* texto en blanco para contraste */
+}
+/*Seccion juan, boton que lleva al incio*/
+#btnTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  display: none; /* oculto por defecto */
+}
+
+
+#btnTop:hover {
+  background: yellow;
+  color: black;
+}
+
+
   
-  #ciberseguridadMoviles { background: lightblue; }
+
   #daniel { background: lightgreen; height: 930px; }
   #sebastian { background: lightcoral; }
