@@ -44,3 +44,34 @@ function mostrarHora() {
   const ahora = new Date();
   document.getElementById("hora").textContent = "Hora actual: " + ahora.toLocaleTimeString();
 }
+function verArticulo(url) {
+  window.open(url, "_blank");
+}
+ function verArticulo3(rutapdf) {
+  window.open(rutapdf, "_blank");
+ }
+ function verArticulo4(url){
+  window.open(url, "_bank");
+ }
+function paginaInicial() {
+    window.location.href = "index.html";
+}
+function enviarComentario() {
+    let comentario = document.getElementById("comentario").value;
+
+if (comentario.trim() === "") {
+alert(" Por favor escribe un comentario antes de enviarlo.");
+} else {
+  // Aquí lo mostramos en la consola, pero podrías enviarlo a una base de datos o lista
+console.log("Nuevo comentario: " + comentario);
+
+  // Lo mostramos también en la página
+    let lista = document.getElementById("lista-comentarios");
+    let nuevo = document.createElement("li");
+    nuevo.textContent = comentario;
+    lista.appendChild(nuevo);
+
+  // Limpia el campo después de enviar
+    document.getElementById("comentario").value = "";
+    }
+}

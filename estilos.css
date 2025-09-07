@@ -1,0 +1,122 @@
+/* ====== ESTILOS BÁSICOS ====== */
+body {
+  margin: 0;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #7b7878f6;
+  color: #000000;
+}
+
+  
+.contenedor {
+  max-width: 1500px;
+  margin: auto;
+  padding: 20px;
+}
+
+.encabezado {
+  display: flex;
+  align-items: center;
+  background: rgb(239, 220, 220);
+  color: rgb(0, 0, 0);
+  padding: 20px;
+
+}
+.encabezado img {
+  width: 500px;
+  height: 120px;
+  border-radius: 10px;
+  margin-right: 20px;
+  object-fit: cover;
+}
+.encabezado h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+.encabezado p {
+  margin: 5px 0 0 0;
+  color: #cfd8e3;
+}
+
+
+.tarjeta {
+  background: white;
+  border: 1px solid #37416b;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+}
+.tabla th, .tabla td {
+  border: 1px solid #000000;
+  padding: 10px;
+}
+.tabla th {
+  background: #f0f3f8;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 12px;
+}
+.articulo {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+  
+}
+.articulo h4 {
+  margin: 8px 0;
+}
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+.chip {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 4px 8px;
+  background: #f8fafc;
+  font-size: 0.8rem;
+}
+
+.fila-controles {
+  margin: 10px 0;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+button {
+  padding: 8px 14px;
+  background: #1b263b;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  background: #334;
+}
+
+.slot-imagen {
+  width: 200%;
+  height: 240px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+
+}
